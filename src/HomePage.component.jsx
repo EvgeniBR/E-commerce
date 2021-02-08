@@ -33,7 +33,7 @@ const HomePage= () =>{
                     <div className='content'>
                         <div className='title'>
                             <h1>Women</h1>
-                            <span>SHOP NOW!!</span>
+                            <span>SHOP NOW!!!</span>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ const HomePage= () =>{
                     <div className='content'>
                         <div className='title'>
                             <h1>Man</h1>
-                            <span>SHOP NOW!!</span>
+                            <span>SHOP NOW!!!</span>
                         </div>
                     </div>
                 </div>
