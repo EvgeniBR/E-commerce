@@ -8,7 +8,8 @@
     border: 1px solid black;
     margin: 0 7.5px 15px;
     overflow: hidden;
-
+    user-select: none;
+    
     &:hover{
         cursor: pointer;
 
@@ -40,8 +41,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-position: center;
-        background-size: cover;
     }
   
     .content {
