@@ -35,42 +35,9 @@ const SignUp = () => {
 
   const handleChange = (event) =>{
     const {name, value} = event.target
-    switch (name){
-        case 'displayName':
-            setCurrentState({
-                displayName:value,
-                email:currentState.email,
-                password:currentState.password,
-                confirmPassword:currentState.confirmPassword,  
-            })
-            break
-        case 'email':
-            setCurrentState({
-                displayName:currentState.displayName,
-                email:value,
-                password:currentState.password,
-                confirmPassword:currentState.confirmPassword,  
-            })
-            break 
-        case 'password':
-            setCurrentState({
-                displayName:currentState.displayName,
-                email:currentState.email,
-                password:value,
-                confirmPassword:currentState.confirmPassword,  
-            })
-            break 
-        case 'confirmPassword':
-            setCurrentState({
-                displayName:currentState.displayName,
-                email:currentState.email,
-                password:currentState.password,
-                confirmPassword:value,  
-            })
-            break
-            default:
-                console.log( "No value found"); 
-    }
+    setCurrentState((oldState) => {
+        return {...oldState, [name]:value };
+    });
   }
 
   const { displayName, email, password, confirmPassword } = currentState;
