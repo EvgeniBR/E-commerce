@@ -1,5 +1,8 @@
+const { UserActionTypes } = require("./user.types");
+
+
 const setCurrentUser = user =>({
-    type: 'SET_CURRENT_USER',
+    type: UserActionTypes.SET_CURRENT_USER,
     payload: user
 });
 
