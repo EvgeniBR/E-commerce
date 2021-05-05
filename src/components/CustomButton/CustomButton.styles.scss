@@ -14,6 +14,8 @@
     border: none;
     cursor: pointer;
     transition: all 0.5s;
+    display: flex;
+    justify-content: center;
 
     &:hover{
         background: white;
@@ -30,4 +32,15 @@
             border:none
         }
     }
+
+    &.inverted{
+        background: white;
+        color: black;
+        border: 1px solid black    
+    }
+        &:hover{
+            background: black;
+            color:white;
+            border: none;
+        }
 }
