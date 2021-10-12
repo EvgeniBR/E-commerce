@@ -29,7 +29,7 @@ const SignUp = () => {
             confirmPassword:'',  
         })
     }catch(e){
-        console.log('error in handle submit of sign up' ,e);
+        console.log('error in  handle submit of sign up' ,e);
     }
   }
 
